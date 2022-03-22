@@ -29,6 +29,7 @@ select, option {
     -webkit-appearance: none;
     appearance: none;
     border: none;
+    outline: none;
 }
 
 .container {
