@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Euro / Schilling / Liter Milch / Döner</h1>
+        <div class="container-input">
+            <h3>Amount</h3>
+            <input id="amount" type="number" min="0"/>
+            <h3>Currency</h3>
+            <select id="currency">
+                <option value="euro">Euro</option>
+                <option value="schilling">Schilling</option>
+                <option value="milk">Liter Milch</option>
+                <option value="kebab">Döner</option>
+            </select>
+            <input type="button" class="button" value="Convert" onclick="convert()"/>
+        </div>
+        <div class="output">
+            <div class="item">
+                <h2>Euro</h2>
+                <input id="euro" readonly="true" />
+            </div>
+            <div class="item">
+                <h2>Schilling</h2>
+                <input id="schilling" readonly="true" />
+            </div>
+            <div class="item">
+                <h2>Liter Milch</h2>
+                <input id="milk" readonly="true" />
+            </div>
+            <div class="item">
+                <h2>Döner</h2>
+                <input id="kebab" readonly="true" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
